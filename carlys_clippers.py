@@ -28,7 +28,7 @@ total_revenue = 0
 # Use a for loop to create a variable i that goes from 0 to len(hairstyles)
 for i in range(len(hairstyles)):
   # Add the product of prices[i] (the price of the haircut at position i) and last_week[i] (the number of people who got the haircut at position i) to total_revenue at each step.
-  total_revenue = prices[i] * last_week[i]
+  total_revenue += prices[i] * last_week[i]
 print("Total Revenue: " + str(total_revenue))
 
 # Find the average daily revenue by dividing total_revenue by 7. Call this number average_daily_revenue and print it out.
